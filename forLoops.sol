@@ -44,5 +44,20 @@ contract loops{
        return maxValue;
     }
 
+    //get count of value higher than x
+     function countGreaterthan(uint256 x) view public returns (uint256){
+
+        uint256 _totalCount;
+        for (uint256 i =0; i<values.length; i++){
+            if (x < values[i]){
+                _totalCount++;
+
+            }
+            
+        }
+        return _totalCount;
+        
+     }
+
 }
 
